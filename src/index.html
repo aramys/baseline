@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="baseline/styles.css.js"></script>
+</head>
+<body class="app">
+  <h1>Baseline Generator</h1>
+  <p class="content">
+    The css for this page was generated using Baseline (JSON -> CSS converter).
+
+    <ul>
+      <li><a href="baseline.css.js">baseline.css.js</a></li>
+    </ul>
+  </p>
+
+  <form id="form">
+    <div class="actions">
+      <button class="btn" id="reset" name="reset" type="button">Reset</button>
+      <button class="btn" id="generate" name="generate" type="submit">Generate</button>
+
+      <select id="selector">
+        <option value="baseline">Baseline</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="in">JACSS (<span id="source"></span>)</label>
+      <textarea id="in"></textarea>
+    </div>
+    
+    <div class="section">
+      <label for="out">CSS</label>
+      <textarea id="out"></textarea>
+    </div>
+
+  </form>
+
+  <div id="app"></div>
+
+<script src="./lib/Inflector.js"></script>
+<script src="./lib/Interpreter.js"></script>
+<script src="./lib/UnitProperties.js"></script>
+<script src="./lib/Converter.js"></script>
+<script src="./index.js"></script>
+</body>
+
+</html>
